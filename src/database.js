@@ -1,5 +1,10 @@
+require('dotenv').config(); // por si aún no lo habías puesto
+
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/pinterest')
-.then(db => console.log(`DB is connected`))
-.catch(err => console.error(err));
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
+.then(() => console.log('✅ DB is connected'))
+.catch(err => console.error('❌ Error connecting to DB:', err));
