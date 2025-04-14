@@ -1,4 +1,4 @@
-# API PARA CREAR UN TABLERO DE MANIFESTACION
+# API PARA CREAR UN TABLERO DE MANIFESTACIÓN
 
 Una aplicación web completa para la gestion de un tablero de manifestacion. Permite a los usuarios:
 
@@ -41,7 +41,7 @@ npm install
 3. Crear archivo `.env` con:
 
 ```env
-MONGO_URI=mongodb://localhost:27017/cineapp
+MONGO_URI=mongodb://localhost:27017/pinterest
 JWT_SECRET=tu_clave_secreta
 PEPPER=tu_pepper
 ```
